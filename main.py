@@ -148,7 +148,7 @@ try: #mysql and mongodb connection
     conn = create_mysql_connection('localhost', 'root', "Game$321")
     cursor = conn.cursor()
 
-    client = MongoClient("mongodb+srv://prash699:1234@cluster0.ijiil.mongodb.net/?retryWrites=true&w=majority")
+    client = MongoClient("mongodb+srv://prash699:####@cluster0.ijiil.mongodb.net/?retryWrites=true&w=majority")
     db = client['youtube_thumbnails_and_comments']
 
     print("MySQL and MongoDB Database connection successful")
@@ -217,8 +217,8 @@ def upload_video_to_s3(key,videolink,title):
         s3 = boto3.resource(
             service_name='s3',
             region_name='ap-south-1',
-            aws_access_key_id='AKIAZPZH5ZL44WQG75KG',
-            aws_secret_access_key='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')
+            aws_access_key_id='######',
+            aws_secret_access_key='#######')
 
         s3.Bucket('youtubescrapedvideos').upload_file(Filename=newtitle+".mp4", Key=title+".mp4")
         print(f'video {key}-{title} has uploaded to the S3 bucket.')
