@@ -148,7 +148,7 @@ try: #mysql and mongodb connection
     conn = create_mysql_connection('localhost', 'root', "Game$321")
     cursor = conn.cursor()
 
-    client = MongoClient("mongodb+srv://prash699:####@cluster0.ijiil.mongodb.net/?retryWrites=true&w=majority")
+    client = MongoClient("mongodb+srv://#####:####@cluster0.ijiil.mongodb.net/?retryWrites=true&w=majority")
     db = client['youtube_thumbnails_and_comments']
 
     print("MySQL and MongoDB Database connection successful")
