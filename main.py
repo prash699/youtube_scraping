@@ -16,7 +16,7 @@ import os
 driver_path = r'C:\Users\Prashant\Desktop\python files\pycharm files\youtubescraping\chromedriver.exe'
 driver = webdriver.Chrome(executable_path= driver_path)
 driver.maximize_window()
-keyword = keyword = ["Hitesh Choudhary","MySirG.com","Krish Naik","Telusko"]
+keyword = ["Hitesh Choudhary","MySirG.com","Krish Naik","Telusko"]
 max_link = 50
 
 
